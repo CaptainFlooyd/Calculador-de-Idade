@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitor Hugo</title>
+    <h1>Sistema que Calcula a sua Idade</h1>
+    <p><strong> Digite o ano que você nasceu?</strong></p>
+    <input id="anoDeNascimento"><br><br> 
+    <button onclick="idade()">Calcular</button>
+    <p id="resultado"><strong>Resultado aqui:</strong> </p>
+</head>
+<body>
+    <script>
+        function idade(){
+            var ano,calculo;
+            ano = document.getElementById("anoDeNascimento").value;
+            calculo = 2023 - ano
+            document.getElementById("resultado").innerHTML = calculo;
+        }
+    </script>
+    
+</body>
+</html>
